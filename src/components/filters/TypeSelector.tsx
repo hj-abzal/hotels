@@ -20,7 +20,7 @@ export const TypeSelector = ({ type, setType }: PropsType) => {
             open={open}
             value={type}
             items={items}
-            placeholder="Тип"
+            placeholder='Тип'
             setOpen={setOpen}
             setValue={setType}
             setItems={setItems}

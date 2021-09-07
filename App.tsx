@@ -10,9 +10,6 @@ import Slider from '@react-native-community/slider';
 import hotels from './src/hotels.json';
 import { filterMultiFunc } from './src/utils/filterMuliFunc';
 
-type SearchType = {
-
-}
 export default function App() {
   const [hotelsArr, setHotes] = useState<HotelType[]>(hotels.hotels)
   const [country, setCountry] = useState('');
@@ -24,7 +21,6 @@ export default function App() {
   const [open, setOpen] = useState(false);
 
   const filterFunc = () => {
-    debugger
     let countryFilter = filterMultiFunc(hotelsArr, 'country', country);
     let typeFilter = filterMultiFunc(countryFilter, 'type', type);
     let starsFilter = filterMultiFunc(typeFilter, 'stars', '', stars);
@@ -58,10 +54,10 @@ export default function App() {
         <View style={styles.feedback}>
           <Text>Количество отзывов: </Text>
           <TextInput
-            placeholder="Введите число"
+            placeholder='Введите число'
             onChangeText={setFeedCount}
             value={feedCount}
-            keyboardType="numeric"
+            keyboardType='numeric'
           />
         </View>
         <Slider
@@ -69,11 +65,11 @@ export default function App() {
           style={styles.slider}
           minimumValue={0}
           maximumValue={5000}
-          thumbTintColor="black"
+          thumbTintColor='black'
           step={1}
           value={sliderValue}
-          minimumTrackTintColor="blue"
-          maximumTrackTintColor="gray"
+          minimumTrackTintColor='blue'
+          maximumTrackTintColor='gray'
           onValueChange={setSliderValue}
           onSlidingStart={() => setEditMode(true)}
           onSlidingComplete={() => setEditMode(false)}
@@ -83,13 +79,13 @@ export default function App() {
         }
         <Button
           onPress={setFilter}
-          title="Применить фильтры"
-          color="#547794"
+          title='Применить фильтры'
+          color='#547794'
         />
         <Button
           onPress={resetFilter}
-          title="Сбросить фильтры"
-          color="#547794"
+          title='Сбросить фильтры'
+          color='#547794'
         />
         </View>
         <ScrollView>
