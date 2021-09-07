@@ -1381,11 +1381,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@miblanchard/react-native-slider@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@miblanchard/react-native-slider/-/react-native-slider-2.0.1.tgz#ce17c17e6fc9959faf07e6e722a7a10a31ae25eb"
-  integrity sha512-IwYHSj/EyXi3qKmCiWQpcU0jiDTg/G9RLPjqWamkdHE6poNrg0Fp2RT1+1Q4F0K5sfOrf+lkjweWXSU2ySg4Yg==
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -4821,6 +4816,11 @@ react-native-safe-area-context@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.2.0.tgz#06113c6b208f982d68ab5c3cebd199ca93db6941"
   integrity sha512-k2Nty4PwSnrg9HwrYeeE+EYqViYJoOFwEy9LxL5RIRfoqxAq/uQXNGwpUg2/u4gnKpBbEPa9eRh15KKMe/VHkA==
+
+react-native-steve@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-steve/-/react-native-steve-0.4.1.tgz#71e67ae0e560b42503e72c28a0683746161c0a0e"
+  integrity sha512-Lo9LvkufyP92cDLNvrgojKmCJf0FoVV1niB8Z3DtUx0F2nWQ33neGDowbDYUQMPHnvOY2tgn11ZRY8As716qKw==
 
 react-native-web@~0.13.12:
   version "0.13.18"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TouchableOpacity, View, Text } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 
 export type StarsType = {
   stars: number
@@ -8,7 +8,8 @@ export type StarsType = {
 export const Stars = ({ stars, setStars }: StarsType) => {
 
   return (
-    <View>
+    <View style={styles.container}>
+      <Text>Сколько звезд: </Text>
       <TouchableOpacity onPress={() => { setStars(1) }} >
         <Star selected={stars > 0} />
       </TouchableOpacity>
@@ -34,3 +35,14 @@ export type StarType = {
 export function Star(props: StarType) {
   return props.selected ? <Text>★</Text> : <Text>☆</Text>;
 }
+const styles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  slider: {
+    height: 45,
+    width: '80%',
+  },
+});

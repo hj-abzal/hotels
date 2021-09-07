@@ -3,10 +3,12 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { Dispatch, SetStateAction } from 'react-native/node_modules/@types/react';
 type PropsType = {
     country: string,
+    open: boolean,
     setCountry: Dispatch<SetStateAction<string>>
+    setOpen: Dispatch<SetStateAction<boolean>>
 }
-export const SearchableInput = ({country, setCountry}: PropsType) =>  {
-    const [open, setOpen] = useState(false);
+export const SearchableInput = ({country, open, setCountry, setOpen}: PropsType) =>  {
+    
     const [items, setItems] = useState([
         { label: 'Греция', value: 'Греция' },
         { label: 'Италия', value: 'Италия' },
